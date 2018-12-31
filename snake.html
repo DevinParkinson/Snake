@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Snake Game</title>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="300" height="300"></canvas>
+
+    <script>
+      /** CONSTANTS **/
+      const CANVAS_BORDER_COLOUR = 'black';
+      const CANVAS_BACKGROUND_COLOUR = "white";
+
+      // Get the canvas element
+      var gameCanvas = document.getElementById("gameCanvas");
+      // Return a two dimensional drawing context
+      var ctx = gameCanvas.getContext("2d");
+      //  Select the colour to fill the canvas
+      ctx.fillStyle = CANVAS_BACKGROUND_COLOUR;
